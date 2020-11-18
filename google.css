@@ -6,49 +6,69 @@ body {
     font-family: Arial, sans-serif;
 }
 nav {
-    position:relative;
-    display: flex;
     width: 100%;
+    position: relative;
 }
 
 a {
-    display: inline;
     padding: 10px; 
     text-decoration: none;
     color: black;
 }
-.topright {
-    width:50%;
+
+#topleft {
+    display: inline-block;
+    width: 50%;
+    text-align: left;
     display: flex;
-    justify-content: flex-end;
-    position: relative;
+    flex-direction: row;
+}
+
+#topright {
+    width: 50%;
+    position: absolute;
     top: 0px;
-    right: 0px; 
-    clear:left; 
-    padding: 0 30px;
-    justify-content: space-between;
+    right:0px;
+    display:inline-block;
+    width:50%;
+    text-align: right;
+}
 
 button {
     border-radius: 2px;
     color: white;
-    background-color: #4285f4;
+    background-color:#4285f4;
     border-color: #4285f4;
     border-radius: 2px;
-    height: 28px;
-    
+    height: 28px;   
 }
 
 button a {
     color:white;
 }
-.topleft {
-    width: 50%;
+
+#logo {
+    display:flex;
+    justify-content:center;
+    margin-top: 200px;
+}
+
+#search {
+    width:100%;
     display: flex;
     justify-content: center;
+    height:38px;
+}
+
+input {
+    width:300px;
 }
 
 footer {
-    position: relative;
+    position: fixed;
     bottom 0px;
+    right:0px;
     width: 100%;
+    background-color: rgb(179, 175, 175);
+    margin-top: 50px;
 }
