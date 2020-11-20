@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="google.css">
         <title>Google</title>
     </head>
     <body>
-        <nav id="headnav">
+        <nav id="headnav"> 
         <div id="topleft">
             <a href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&autm_campaign=hp-header" ping="/url?sa=t&rct=j&source=webhp&url=https://about.google/%3Ffg%3D1%26utm_source%3Dgoogle-US%26utm_medium%3Dreferral%26utm_campaign%3Dhp-header&ved=0ahUKEwiXxoWoxortAhULbc0KHZeqD_YQkNQCCAM">About</a>
             <a href="https://store.google.com/US?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US" ping="/url?sa=t&rct=j&source=webhp&url=https://store.google.com/US%3Futm_source%3Dhp_header%26utm_medium%3Dgoogle_ooo%26utm_campaign%3DGS100042%26hl%3Den-US&ved=0ahUKEwiXxoWoxortAhULbc0KHZeqD_YQpMwCCAQ">Store</a>
@@ -15,15 +17,20 @@
         <div id="topright">
             <a href="https://mail.google.com/mail/?tab=wm&ogbl" target="_top">Gmail</a>
             <a href="https://www.google.com/imghp?hl=en&tab=wi&ogbl" target="_top">Images</a>
+            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect x="37" width="26" height="26"></rect><rect width="26" height="26"></rect><rect x="74" width="26" height="26"></rect><rect x="37" y="37" width="26" height="26"></rect><rect y="37" width="26" height="26"></rect><rect x="74" y="37" width="26" height="26"></rect><rect x="37" y="74" width="26" height="26"></rect><rect y="74" width="26" height="26"></rect><rect x="74" y="74" width="26" height="26"></rect></svg>
             <button id="sign-in"><a href="https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/&ec=GAZAAQ" target="_top">Sign in</a></button>
-        </div>
+        </div>   
         </nav>
 <main>
     <div id="logo">
-    <img src="images/googlelogo.png">
+    <img src="images/googlelogo.png" alt= "Google Logo">
     </div>
     <div id="search">
-    <input type="text" id="input" placeholder="Search"><br>
+    <form class="search">
+    <input type="text" id="input" placeholder="Search">
+    <button type="button" id="mic"></button>
+    <button type="button" id="magnify"></button>
+    </form>
     <button type="button" value="Search Google" id="search-google">Search Google</button>
     </div>
 </main>

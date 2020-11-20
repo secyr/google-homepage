@@ -1,13 +1,17 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
     font-family: Arial, sans-serif;
     height: 100vh;
+    width: 100%
+    background-color: white;
 }
+
+
 nav {
     width: 100%;
     position: relative;
@@ -38,53 +42,88 @@ a {
     top:5px;
     right: 10px;
 }
-
-button {
-    border-radius: 2px;
-    color: white;
-    background-color:#4285f4;
-    border-color: #4285f4;
-    border-radius: 2px;
-    height: 28px;   
+svg {
+    width:15px;
+    height:15px;
+    
 }
 
-button a {
+nav button {
+    border-radius: 4px;
+    color: white;
+    background-color:#4285f4;
+    border-radius: 2px;
+    height: 28px;  
+    border: none;  
+}
+
+nav button a {
     color:white;
 }
 
 #logo {
     display:flex;
     justify-content:center;
-    margin-top: 200px;
+    margin-top: 120px;
+    margin-bottom: 20px
+}
+img {
+    margin: 15px auto;
 }
 
 #search {
     width:100%;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
     height:38px;
+    margin: 0 auto;
 }
 
 input {
-    width:300px;
+    width:500px;
+    height: 40px;
+    padding: 0px 40px;
+    margin: 10 auto;
+    position: relative;
+    left: 50px;
+}
+
+form { 
+    margin: auto; 
+}
+
+#mic {
+    background-image: url(images/microphone.png);
+    background: transparent;
+    width: 25px;
+    height: 25px;
+    margin: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
 }
 
 #search button {
-    background-color:lightgrey;
-    border-color: grey;
-    color: black;
+    background-image: linear-gradient(top, #f5f5f5, #f1f1f1);
+    border: 1 px solid #f2f2f2;
+    border-radius: 4px; 
+    color: #5f6368;
     position: relative;
-    right: 200px;
+    right: 450px;
     top: 50px;
+    padding: 0px 16px;
+    margin-bottom: 10px;
 }
 
 footer {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     flex-direction: row;
     position: absolute;
-    bottom 0px;
+    bottom: 0px;
     width: 100%;
     height: 40px;
     background-color: #f2f2f2;
@@ -102,6 +141,8 @@ footer {
     padding: 10px;
 }
 #bottomright {
+    display: flex; 
+    justify-content: flex-end;
     position: absolute;
     bottom: 5px;
     right: 0px;
@@ -111,4 +152,5 @@ footer {
 
 #bottomright p {
     display: inline-block;
+    padding: 10px; 
 }
