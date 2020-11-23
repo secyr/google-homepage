@@ -11,6 +11,7 @@ body {
     background-color: white;
 }
 
+/*STICKY HEADER*/
 
 nav {
     width: 100%;
@@ -31,6 +32,8 @@ a {
     text-align: left;
     display: flex;
     flex-direction: row;
+    position: relative;
+    top: 10px;
 }
 
 #topright {
@@ -42,9 +45,13 @@ a {
     top:5px;
     right: 10px;
 }
-svg {
+
+svg { /*APPS ICON*/
     width:15px;
     height:15px;
+    margin: 10px;
+    position: relative;
+    top: 10px;
     
 }
 
@@ -55,12 +62,14 @@ nav button {
     border-radius: 2px;
     height: 28px;  
     border: none;  
+    margin: 0 0 0 15px;
 }
 
 nav button a {
     color:white;
 }
 
+/* MAIN LOGO */
 #logo {
     display:flex;
     justify-content:center;
@@ -69,6 +78,11 @@ nav button a {
 }
 img {
     margin: 15px auto;
+}
+
+/* SEARCH BAR */
+#search-area {
+    display: flex;
 }
 
 #search {
@@ -105,16 +119,18 @@ form {
     display: block;
 }
 
-#search button {
+#search-google {
+    display: inline-block;
     background-image: linear-gradient(top, #f5f5f5, #f1f1f1);
     border: 1 px solid #f2f2f2;
     border-radius: 4px; 
     color: #5f6368;
     position: relative;
     right: 450px;
-    top: 50px;
+    top: 90px;
     padding: 0px 16px;
     margin-bottom: 10px;
+    height: 2em;
 }
 
 footer {
